@@ -54,13 +54,6 @@ https://github.com/chahankar-arya04
    - Log Line
    - Severity Level with icons
 
----
-
-## 🌟 Screenshots
-
-*(Add screenshots here)*
-
----
 
 ## 🧩 Future Enhancements
 
