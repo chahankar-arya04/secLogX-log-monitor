@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: #333; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Analysis Result</h1>
+    <p>Total Lines: {{ total_lines }}</p>
+    {% if suspicious %}
+        <h2>Suspicious Lines Found:</h2>
+        <table>
+            <tr>
+                <th>Log Line</th>
+                <th>Severity</th>
+            </tr>
+            {% for entry in suspicious %}
+            <tr>
+                <td>{{ entry.line }}</td>
+                <td>
+                    {% if entry.severity == 'Critical' %}
+                        🔴 {{ entry.severity }}
+                    {% elif entry.severity == 'High' %}
+                        🟠 {{ entry.severity }}
+                    {% elif entry.severity == 'Medium' %}
+                        🟡 {{ entry.severity }}
+                    {% else %}
+                        🔵 {{ entry.severity }}
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No suspicious lines detected.</p>
+    {% endif %}
+    <br>
+    <a href="/">Back to Upload</a>
+</body>
+</html>

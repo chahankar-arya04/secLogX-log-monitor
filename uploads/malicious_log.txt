@@ -1,0 +1,5 @@
+[2025-07-12 15:00] ERROR: Failed to connect to database.
+[2025-07-12 15:01] WARNING: Unauthorized access attempt detected.
+[2025-07-12 15:02] INFO: Normal operation resumed.
+[2025-07-12 15:03] ALERT: Root login attempt from unknown IP.
+[2025-07-12 15:04] INFO: System check complete.
