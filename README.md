@@ -66,8 +66,7 @@ https://github.com/chahankar-arya04
 ---
 
 ## 🧑‍💻 Author
-
-**Your Name Here**
+Arya Chahankar
 - [LinkedIn](https://www.linkedin.com/in/arya-chahankar-27ba24262/)
 - [GitHub](https://github.com/chahankar-arya04)
 
